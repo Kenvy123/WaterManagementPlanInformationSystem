@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Nunito:ital,wght@1,300&display=swap" rel="stylesheet">
+    <head>
+        
+        <title>Water Management Plant Information System</title>
+        <style>
+            input[type=text], input[type=password] {
+                width: 100%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                display: inline-block;
+                border: none;
+                background: #f1f1f1;
+            }
+
+            input[type=text]:focus, input[type=password]:focus {
+                background-color: #ddd;
+                outline: none;
+            }
+
+            hr {
+                border: 1px solid #f1f1f1;
+                margin-bottom: 25px;
+            }
+            
+            .container {
+                padding: 16px;
+            }
+
+            button {
+                background-color: #04AA6D;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                opacity: 0.9;
+            }
+
+            button:hover {
+                opacity:1;
+            }
+
+            .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+        </style>
+
+        <body class="header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden login-page">
+            <form action="/action_page.php" style="border:1px solid #ccc">
+                <div class="container">
+                <h1>Add System User</h1>
+                <h2>System User Information</h2>
+                <p>Key in the system user information.</p>
+                <hr>
+
+                <label for="uname"><b>Name</b></label>
+                <input type="text" placeholder="Enter Your Name" name="uname" required>    
+                
+                <br>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+                    
+                <br>
+                <label for="ic"><b>IC Number</b></label>
+                <input type="text" placeholder="Enter IC number(without -)" name="ic" required>
+                
+                <br>
+                <label for="position"><b>Position</b></label>
+                <input type="text" placeholder="Enter Position" name="position" required>
+                
+                <br>
+                <p>Operating Unit</p>  
+                <p>Status:</p>  
+
+                <br>
+                <label>
+                <input type="checkbox" checked="none" name="active" style="margin-bottom:15px"> Active
+                </label>
+
+                <br>
+                <label>
+                <input type="checkbox" checked="none" name="inactive" style="margin-bottom:15px"> Inactive
+                </label>
+
+                <br>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <br>
+                <label for="psw-confirm"><b>Confirm Password</b></label>
+                <input type="password" placeholder="Re-type Password" name="psw-confirm" required>
+                
+                <br>
+                <div class="clearfix">
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="submitbtn">Submit</button>
+                </div>
+            </div>
+          </form>
+        </body>
+    </head>
+</html>

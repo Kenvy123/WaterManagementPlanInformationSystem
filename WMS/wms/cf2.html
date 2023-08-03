@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Nunito:ital,wght@1,300&display=swap" rel="stylesheet">
+    <head>
+        
+        <title>Water Management Plant Information System</title>
+        <style>
+            input[type=text], input[type=password] {
+                width: 100%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                display: inline-block;
+                border: none;
+                background: #f1f1f1;
+            }
+
+            input[type=text]:focus, input[type=password]:focus {
+                background-color: #ddd;
+                outline: none;
+            }
+
+            hr {
+                border: 1px solid #f1f1f1;
+                margin-bottom: 25px;
+            }
+            
+            .container {
+                padding: 16px;
+            }
+
+            button {
+                background-color: #04AA6D;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                opacity: 0.9;
+            }
+
+            button:hover {
+                opacity:1;
+            }
+
+            .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+        </style>
+
+        <body class="header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden login-page">
+            <form action="/action_page.php" style="border:1px solid #ccc">
+                <div class="container">
+                <h1>Add Operating Unit</h1>
+                <h2>Operating/ Service Information</h2>
+                <p>Key in the OU information.</p>
+                <hr>
+
+                <label for="mname"><b>Mill Name</b></label>
+                <input type="text" placeholder="Enter Mill Name" name="mname" required>    
+                
+                <br>
+                <label for="mcode"><b>Mill Code</b></label>
+                <input type="text" placeholder="Enter Mill Code" name="mcode" required>    
+                <br>
+                <p>Status:</p>  
+
+                <br>
+                <label>
+                <input type="checkbox" checked="none" name="ou" style="margin-bottom:15px"> Operating Unit
+                </label>
+
+                <br>
+                <label>
+                <input type="checkbox" checked="none" name="su" style="margin-bottom:15px"> Service Unit
+                </label>    
+
+                <br>
+                <label for="m_manager"><b>Mill Manager</b></label>
+                <input type="text" placeholder="Enter Mill Manager's Name" name="m_manager" required>
+                    
+                <br>
+                <label for="p_company"><b>Parent Company</b></label>
+                <input type="text" placeholder="Enter Parent Company" name="p_company" required>
+                
+                <br>
+                <label for="address"><b>Address</b></label>
+                <input type="text" placeholder="Enter Address" name="address" required>
+
+                <br>
+                <label for="latitude"><b>Latitude</b></label>
+                <input type="text" placeholder="Enter Latitude" name="latitude" required>
+
+                <br>
+                <label for="mill_telephone_no"><b>Mill Telephone Number</b></label>
+                <input type="text" placeholder="Enter Telephone Number" name="mill_telephone_no" required>
+
+                <br>
+                <label for="n_workers"><b>Number of Workers</b></label>
+                <input type="text" placeholder="Enter Number of Workers" name="n_workers" required>
+
+                <br>
+                <label for="capacity"><b>Capacity</b></label>
+                <input type="text" placeholder="Enter Capacity" name="capacity" required>
+                
+                <br> 
+                <p>Status:</p>  
+
+                <br>
+                <label>
+                <input type="checkbox" checked="none" name="active" style="margin-bottom:15px"> Active
+                </label>
+                <br>
+                <label>
+                <input type="checkbox" checked="none" name="inactive" style="margin-bottom:15px"> Inactive
+                </label>
+                
+                <div class="clearfix">
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="submitbtn">Submit</button>
+                </div>
+            </div>
+          </form>
+        </body>
+    </head>
+</html>

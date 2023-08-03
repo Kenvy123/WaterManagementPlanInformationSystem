@@ -1,0 +1,5 @@
+make a dataflow -to have a clear mind set
+dashborad, wm, configuration, report
+
+record rain in 1 module
+opearting unit detail module
